@@ -165,23 +165,21 @@ Figure 3 and Figure 4 show the DQN Learning Curves for Cases I and II, respectiv
 The primary objective of employing reinforcement learning in this optical network environment is to optimize the utilization of spectral slots to reduce the number of blocked requests effectively. The gradual increase in rewards observed in the learning curves correlates with improved utilization rates. Higher rewards signify fewer blocked requests and better overall network resource management. This outcome directly aligns with the goal of enhancing spectral efficiency.
 
 \subsection{Comparison}
-The performance comparison between Proximal Policy Optimization (PPO) and Deep Q-Network (DQN) across both cases reveals key differences in their learning capabilities and efficiency.
-
+Comparison of the performance of PPO and DQN over both cases reveals key differences in learning capability and efficiency.
 
 Proximal Policy Optimization (PPO):
 
-Case I: PPO demonstrates a consistent and steady improvement in rewards, reflecting its ability to gradually learn and adapt to the environment. This consistency indicates that PPO may be well-suited for scenarios where long-term learning stability is crucial.
-Case II: The learning curve for PPO in Case II shows a similar trend, with continuous improvement over time. The gradual increase in rewards further emphasizes PPO’s strength in environments requiring sustained learning and adaptation.
+Case I: PPO demonstrates a smooth and steady improvement in rewards, showing its capability of gradual learning and adaptation to the environment. The consistency of the learning pattern suggests that PPO will be highly suitable for situations where long-term learning stability is a highly desired feature of the learning algorithm.
+Case II: In Case II, the learning curve of PPO indicates the same pattern, improving with the increase in time. The rewards indicate the strength of PPO in environments where sustained learning and adaptation are highly required.
 
 Deep Q-Network (DQN):
 
-Case I: DQN exhibits a rapid initial increase in rewards, quickly reaching a high reward plateau. This suggests that DQN is effective at quickly identifying successful strategies, making it suitable for environments where a fast solution is beneficial. However, the plateau indicates potential challenges in further improving performance beyond initial gains.
-Case II: In Case II, DQN shows a similar pattern, achieving high rewards early on but with some fluctuations. This variability highlights DQN’s potential difficulty in maintaining stability over longer periods.
+Case I: DQN shows a steep initial increase in rewards and then starts to level off at a high reward plateau. This indicates DQN is very good at identifying quickly successful strategies for the given environment, thus being very suitable for environments where a solution is highly beneficial to be found quickly. However, the plateau indicates that this method might have difficulty improving the performance even further than the initial gain.
+Case II: In Case II, DQN depicts the same pattern of a steep initial rise in reward; however, there are some fluctuations. This fluctuation indicates the problems of DQN in maintaining stability over a longer period.
 Heuristic Algorithm:
 
-The heuristic-based spectrum allocation algorithm serves as a baseline for comparison. While it is simpler and less adaptive than the RL methods, it provides insight into the efficiency of resource utilization in a straightforward manner.
-
-Network Utilization Comparison: When comparing network utilization, both PPO and DQN outperform the heuristic algorithm, demonstrating higher utilization rates. PPO’s consistent performance ensures more stable utilization, while DQN’s rapid initial success offers high utilization quickly, albeit with some variability.
+This heuristic-based spectrum allocation algorithm serves as a baseline for comparison. Even though it is much simpler and less adaptive than the RL methods, still it sheds light on the efficiency of resource utilization in a very simple way.
+Comparison of Network Utilization: Comparing the network utilization of both PPO and DQN, they outperform the heuristic algorithm by showing a higher utilization percentage. In PPO, the performance is consistent, which ensures stable utilization, whereas in DQN, the initial good performance offers high utilization very fast but also with some fluctuations.
 
 
 \bibliography{ref}
